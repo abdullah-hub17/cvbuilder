@@ -1,0 +1,150 @@
+.R-container {
+  --color: #239ce2;
+  min-width: 700px;
+  max-width: 850px;
+  margin: 0 auto;
+  flex: 1.2;
+  height: fit-content;
+  min-height: 900px;
+  box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px;
+}
+
+.R-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.R-header .R-heading {
+  font-size: 2.7rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.R-header .R-subHeading {
+  color: var(--color);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.R-header .R-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+
+.R-header .R-link {
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.R-header .R-link svg {
+  color: var(--color);
+  height: 16px;
+  width: 16px;
+}
+
+.R-main {
+  display: flex;
+  gap: 30px;
+}
+
+.R-col1 {
+  flex: 1.3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.R-col2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.R-section .R-sectionTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  width: 100%;
+  border-bottom: 2px solid #000;
+}
+
+.R-section .R-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+.R-section .R-content .R-item {
+  border-bottom: 1px dotted lightgray;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 10px;
+}
+.R-section .R-content .R-item:last-child {
+  border-bottom: none;
+}
+
+.R-content .R-title {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.R-content .R-subTitle {
+  font-weight: bold;
+  color: var(--color);
+  font-size: 1rem;
+}
+
+.R-content .R-overview {
+  font-size: 0.875rem;
+}
+
+.R-content .R-link {
+  display: flex;
+  gap: 5px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--color);
+}
+.R-content .R-link svg {
+  height: 14px;
+  width: 14px;
+  color: var(--color);
+}
+
+.R-content .R-date {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.R-content .R-date svg {
+  height: 14px;
+  width: 14px;
+}
+
+.R-content .R-points,
+.R-numbered {
+  padding-left: 18px;
+  font-size: 0.875rem;
+}
+
+.R-numbered li {
+  list-style-type: decimal;
+}
+
+.R-hidden {
+  display: none;
+}
