@@ -7,10 +7,11 @@
     justify-content: space-evenly;
     background-color: rgb(238, 252, 255);
     min-height: 85vh;
+    height: 100vh;
 }
 
 .H-heading{
-    margin: 0 auto;
+    margin-top: 150px;
     max-width: 500px;
     color: black;
     line-height: 4.1rem;
@@ -25,5 +26,6 @@
 }
 
 .H-right img{
-    width: 400px;
+    margin-top: 150px;
+    width: 500px;
 }

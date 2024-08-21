@@ -4,7 +4,7 @@ import resumeSvg from "../components/Assets/resume.svg";
 
 const Header = () => {
   return (
-    <div className="H-container">
+    <div id="header" className="H-container">
       <div className="H-left">
         <p className="H-heading">
           A <span>Resume</span> that stands out!

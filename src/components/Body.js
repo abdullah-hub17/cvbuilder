@@ -61,8 +61,8 @@ const Body = () => {
   });
 
   return (
-    <div className="B-container">
-      <p className="B-heading">Resume Builder</p>
+    <div id="create-resume" className="B-container">
+      <p className="B-heading"><span>Resume</span> Builder</p>
       <div className="B-toolbar">
         <div className="B-colors">
           {colors.map((item) => (

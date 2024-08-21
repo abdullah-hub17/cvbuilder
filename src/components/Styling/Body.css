@@ -8,8 +8,15 @@
 }
 
 .B-heading {
-  font-weight: 500;
-  font-size: 2.1rem;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 750;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  border-bottom: 5px solid #239ce2;
+}
+
+.B-heading span{
+  color: #239ce2;
 }
 
 .B-toolbar {
@@ -23,6 +30,14 @@
   display: flex;
   gap: 20px;
   padding: 0 30px;
+  border: 2px solid rgb(166, 166, 166);
+  border-radius: 0px 7px 20px 20px;
+  padding: 15px;
+}
+
+.B-colors:hover{
+  box-shadow: 0 2px 8px rgb(118, 118, 118);
+  transition: 500ms ease;
 }
 
 .B-colors .B-color {
@@ -30,6 +45,12 @@
   width: 36px;
   border-radius: 50%;
   background-color: #239ce2;
+  cursor: pointer;
+}
+
+.B-color:hover{
+  transform: translateY(2px);
+  transition: 400ms ease;
 }
 
 .B-colors .B-active {
@@ -37,7 +58,7 @@
 }
 .B-toolbar button {
   padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: 7px;
   background-color: #239ce2;
   color: #fff;
   border: none;

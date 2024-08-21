@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+.N-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #239ce2;
+  padding: 1rem;
+  list-style: none;
+  z-index: 1000;
+}
+.N-items{
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.N-items a {
+  text-decoration: none;
+}
+.N-container h1 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.N-container h1 span{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.N-container h1:hover {
+  transition: 200ms ease-in-out;
+  text-shadow: 0 2px 8px rgb(110, 110, 110);
+}
+.N-items li {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  margin-left: 3.5rem;
+  margin-right: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.N-items li:hover {
+    text-shadow: 0 0 8px rgb(0, 255, 247);
+    transition: 400ms ease;
+}
+
+@media (max-width: 768px) {
+  .N-container {
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+
+  .N-items li {
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+}
