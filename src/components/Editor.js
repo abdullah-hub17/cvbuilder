@@ -43,6 +43,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Title"
+          type="text"
           placeholder="Enter title eg. Frontend developer"
           value={values.title}
           onChange={(event) =>
@@ -51,6 +52,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Company Name"
+          type="text"
           placeholder="Enter company name eg. amazon"
           value={values.companyName}
           onChange={(event) =>
@@ -61,6 +63,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Certificate Link"
+          type="url"
           placeholder="Enter certificate link"
           value={values.certificationLink}
           onChange={(event) =>
@@ -72,6 +75,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Location"
+          type="text"
           placeholder="Enter location eg. Remote"
           value={values.location}
           onChange={(event) =>
@@ -104,16 +108,19 @@ const Editor = (props) => {
         <label>Enter work description</label>
         <InputControl
           placeholder="Line 1"
+          type="text"
           value={values.points ? values.points[0] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 0)}
         />
         <InputControl
           placeholder="Line 2"
+          type="text"
           value={values.points ? values.points[1] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 1)}
         />
         <InputControl
           placeholder="Line 3"
+          type="text"
           value={values.points ? values.points[2] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 2)}
         />
@@ -125,6 +132,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Title"
+          type="text"
           value={values.title}
           placeholder="Enter title eg. Chat app"
           onChange={(event) =>
@@ -134,6 +142,7 @@ const Editor = (props) => {
       </div>
       <InputControl
         label="Overview"
+        type="text"
         value={values.overview}
         placeholder="Enter basic overview of project"
         onChange={(event) =>
@@ -143,6 +152,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Deployed Link"
+          type="url"
           value={values.link}
           placeholder="Enter deployed link of project"
           onChange={(event) =>
@@ -151,6 +161,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Github Link"
+          type="url"
           value={values.github}
           placeholder="Enter github link of project"
           onChange={(event) =>
@@ -162,21 +173,25 @@ const Editor = (props) => {
         <label>Enter project description</label>
         <InputControl
           placeholder="Line 1"
+          type="text"
           value={values.points ? values.points[0] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 0)}
         />
         <InputControl
           placeholder="Line 2"
+          type="text"
           value={values.points ? values.points[1] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 1)}
         />
         <InputControl
           placeholder="Line 3"
+          type="text"
           value={values.points ? values.points[2] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 2)}
         />
         <InputControl
           placeholder="Line 4"
+          type="text"
           value={values.points ? values.points[3] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 3)}
         />
@@ -188,6 +203,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Title"
+          type="text"
           value={values.title}
           placeholder="Enter title eg. B-tech"
           onChange={(event) =>
@@ -197,6 +213,7 @@ const Editor = (props) => {
       </div>
       <InputControl
         label="College/School Name"
+        type="text"
         value={values.college}
         placeholder="Enter name of your college/school"
         onChange={(event) =>
@@ -230,6 +247,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Name"
+          type="text"
           placeholder="Enter your full name eg. Aashu"
           value={values.name}
           onChange={(event) =>
@@ -238,6 +256,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Title"
+          type="text"
           value={values.title}
           placeholder="Enter your title eg. Frontend developer"
           onChange={(event) =>
@@ -248,6 +267,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Linkedin Link"
+          type="url"
           value={values.linkedin}
           placeholder="Enter your linkedin profile link"
           onChange={(event) =>
@@ -256,6 +276,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Github Link"
+          type="url"
           value={values.github}
           placeholder="Enter your github profile link"
           onChange={(event) =>
@@ -266,6 +287,7 @@ const Editor = (props) => {
       <div className="E-row">
         <InputControl
           label="Email"
+          type="email"
           value={values.email}
           placeholder="Enter your email"
           onChange={(event) =>
@@ -274,6 +296,7 @@ const Editor = (props) => {
         />
         <InputControl
           label="Enter phone"
+          type="tel"
           value={values.phone}
           placeholder="Enter your phone number"
           onChange={(event) =>
@@ -289,21 +312,25 @@ const Editor = (props) => {
         <label>List your achievements</label>
         <InputControl
           placeholder="Line 1"
+          type="text"
           value={values.points ? values.points[0] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 0)}
         />
         <InputControl
           placeholder="Line 2"
+          type="text"
           value={values.points ? values.points[1] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 1)}
         />
         <InputControl
           placeholder="Line 3"
+          type="text"
           value={values.points ? values.points[2] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 2)}
         />
         <InputControl
           placeholder="Line 4"
+          type="text"
           value={values.points ? values.points[3] : ""}
           onChange={(event) => handlePointUpdate(event.target.value, 3)}
         />
@@ -315,6 +342,7 @@ const Editor = (props) => {
     <div className="E-detail">
       <InputControl
         label="Summary"
+        type="text"
         value={values.summary}
         placeholder="Enter your objective/summary"
         onChange={(event) =>
@@ -328,6 +356,7 @@ const Editor = (props) => {
     <div className="E-detail">
       <InputControl
         label="Other"
+        type="text"
         value={values.other}
         placeholder="Enter something"
         onChange={(event) =>

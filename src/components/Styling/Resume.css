@@ -13,6 +13,10 @@
   padding: 30px;
 }
 
+.R-section {
+  color: var(--color);
+}
+
 .R-header {
   display: flex;
   flex-direction: column;
