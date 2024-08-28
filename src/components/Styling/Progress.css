@@ -1,0 +1,51 @@
+.P-container{
+    padding: 50px 30px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    gap: 100px;
+    justify-content: space-evenly;
+    background-color: rgb(238, 252, 255);
+    min-height: 85vh;
+    height: 100vh;
+}
+
+.P-heading{
+    margin-top: 50px;
+    max-width: 550px;
+    color: black;
+    line-height: 5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.P-heading span {
+    background-clip: text;
+    background-image: linear-gradient(to right, #239ce2, #1369b9);
+    color: transparent;
+    letter-spacing: 1px;
+}
+
+.P-right img{
+    margin-top: 80px;
+    width: 500px;
+}
+
+.P-button {
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 7px;
+    background-color: #239ce2;
+    color: #fff;
+    border: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 200ms;
+    margin-top: 10px;
+  }
+  
+  .P-button:hover {
+    background-color: #008cdd;
+    transition: 200ms ease;
+  }
