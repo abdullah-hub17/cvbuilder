@@ -95,8 +95,11 @@ const Body = () => {
           ref={resumeRef}
           sections={sections}
           information={resumeInformation}
+          color={activeColor}
         />
-        activeColor={activeColor}
+        <div className="B-activeColor">
+          {activeColor}
+        </div>
       </div>
     </div>
   );

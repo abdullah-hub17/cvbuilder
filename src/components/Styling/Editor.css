@@ -117,10 +117,3 @@
   background-color: #008cdd;
   transition: 200ms ease;
 }
-
-.E-chip .E-new {
-  color: #239ce2;
-  font-weight: bold;
-  letter-spacing: 1px;
-  cursor: pointer;
-}

@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import {
   AtSign,
@@ -108,7 +111,7 @@ const Resume = forwardRef((props, ref) => {
         <div className="R-sectionTitle">{info.project.sectionTitle}</div>
         <div className="R-content">
           {info.project?.details?.map((item) => (
-            <div className="item">
+            <div className="R-item">
               {item.title ? <p className="R-title">{item.title}</p> : <span />}
               {item.link ? (
                 <a className="R-link" href={item.link}>
@@ -216,7 +219,7 @@ const Resume = forwardRef((props, ref) => {
       >
         <div className="R-sectionTitle">{info.summary?.sectionTitle}</div>
         <div className="R-content">
-          <p className="overview">{info.summary?.detail}</p>
+          <p className="R-overview">{info.summary?.detail}</p>
         </div>
       </div>
     ),

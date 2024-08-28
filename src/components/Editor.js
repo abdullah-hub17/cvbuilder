@@ -367,7 +367,7 @@ const Editor = (props) => {
   );
 
   const generateBody = () => {
-    console.log("Active Section Key:", activeSectionKey); // Debugging
+    console.log("Active Section Key:", activeSectionKey);
 
     switch (activeSectionKey) {
       case "basicInfo":
@@ -658,7 +658,7 @@ const Editor = (props) => {
                   }`}
                   key={item.title + index}
                 >
-                  onClick={() => setActiveDetailIndex(index)}
+                  {/* onClick={() => setActiveDetailIndex(index)} */}
                   <p>
                     {sections[activeSectionKey]} {index + 1}
                   </p>
@@ -674,7 +674,7 @@ const Editor = (props) => {
           {activeInformation?.details &&
           activeInformation?.details?.length > 0 ? (
             <div className="E-new" onClick={handleAddNew}>
-              +New
+              <button>+New</button>
             </div>
           ) : (
             ""
